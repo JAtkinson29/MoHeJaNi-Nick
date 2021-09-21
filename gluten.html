@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>MoHeJaNi :: Home</title>
+
+	<link href="style.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+
+	<nav class="navbar navbar-expand-sm bg-secondary navbar-dark sticky-top">
+	
+
+		<a class="navbar-brand text-danger" href="index.html">
+			<h1>MoHeJaNi</h1>
+		</a>
+
+		<ul class="navbar-nav">
+
+			<li class="nav-item">
+				<a class="nav-link" href="#">Top</a>
+			</li>
+
+			<li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+					Cuisine
+				</a>
+				<div class="dropdown-menu">
+					<a class="dropdown-item" href="american.html">American</a>
+					<a class="dropdown-item" href="Chinese.html">Chinese</a>
+					<a class="dropdown-item" href="Indian.html">Indian</a>
+					<a class="dropdown-item" href="Italian.html">Italian</a>
+					<a class="dropdown-item" href="Jamaican.html">Jamaican</a>
+					<a class="dropdown-item" href="Mexican.html">Mexican</a>
+				</div>
+			</li>
+
+			<li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+					Meal Prep
+				</a>
+				<div class="dropdown-menu">
+					<a class="dropdown-item" href="easy.html">Easy Meals</a>
+					<a class="dropdown-item" href="weightg.html">Weight Gain</a>
+					<a class="dropdown-item" href="weightl.html">Weight Loss</a>
+				</div>
+			</li>
+
+			<li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+					Dietary Restrictions
+				</a>
+				<div class="dropdown-menu">
+					<a class="dropdown-item" href="gluten.html">Gluten Intolerance</a>
+					<a class="dropdown-item" href="lactose.html">Lactose Intolerance</a>
+					<a class="dropdown-item" href="vegetarian.html">Vegetarian</a>
+				</div>
+			</li>
+		</ul>
+
+		<form class="form-inline" action="/action_page.php">
+			<input class="form-control mr-sm-2" type="text" placeholder="Search">
+    <button class="btn btn-success" type="submit" onclick="loadXMLDoc()">Search</button>
+  </form>
+
+	<button type="button" class="btn btn-link"><a href="login.html">Log in</a></button>
+  <button type="button" class="btn btn-link"><a href="signup.html">Sign Up</a></button>
+
+</nav>
+
+	<!-- End of navbar -->
+
+<br>
+<br>
+
+<div id="demo" class="carousel slide" data-ride="carousel" align="center">
+
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="Assets/Pictures/natural.png" alt="natural">
+        <div class="carousel-caption">
+          <h3>Healthy Ingredients</h3>
+          <p></p>
+        </div>  
+    </div>
+    <div class="carousel-item">
+      <img src="Assets/Pictures/veggie.png" alt="veggie">
+        <div class="carousel-caption">
+          <h3>Veggies </h3>
+          <p></p>
+        </div>
+    </div>
+    <div class="carousel-item">
+      <a href="https://www.today.com/recipes/fluffy-japanese-souffl-pancakes-recipe-t227231">
+      <img src="Assets/Pictures/pancake.png" alt="New York">
+        <div class="carousel-caption">
+          <h3>Japanese Soufflé Pancakes</h3>
+          <p></p>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+
+</div>
+<!-- End of carousel -->
+
+<!-- start of flex container -->
+
+<div class="container mt-3">
+  <div class="d-flex ">
+    <div class="p-2 bg-Red">
+      <div class="container">
+        <div class="row-fluid ">
+          <h2>MKRollin</h2>
+          <p>Baked Goods</p>
+            <div class="card" style="width:400px">
+              <img class="card-img-top" src="Assets/Pictures/Roll.png" alt="Card image" style="width:100%">
+              <div class="card-body">
+                <h4 class="card-title">Molly Rollins</h4>
+                <p class="card-text">I like baking.</p>
+                 <a href="#demo" class="btn btn-primary" data-toggle="collapse">See Recipe</a>
+                  <div id="demo" class="collapse">
+                      recipe goes here
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <div class="p-2 bg-Red">
+      <div class="container">
+        <div class="row-fluid ">
+          <h2>MkRollin</h2>
+          <p>Mini Cinni's</p>
+           <div class="card" style="width:400px">
+             <img class="card-img-top" src="Assets/Pictures/Roll.png" alt="Card image" style="width:100%">
+              <div class="card-body">
+                <h4 class="card-title">Molly Rollins</h4>
+                <p class="card-text">These mini cinnamon rolls are to die for!!</p>
+                 <a href="#demo" class="btn btn-primary" data-toggle="collapse">See Recipe</a>
+                  <div id="demo" class="collapse">
+                      recipe goes here
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="p-2 bg-Red">
+      <div class="container">
+        <div class="row-fluid ">
+          <h2>NinjaNick</h2>
+          <p>Three Cheese Mac N Cheese</p>
+           <div class="card" style="width:400px">
+             <img class="card-img-top" src="Assets/Pictures/Mac.jpg" alt="Card image" style="width:100%">
+              <div class="card-body">
+                <h4 class="card-title">Nick Saltkill</h4>
+                <p class="card-text">This Mac N Cheese is amazing!</p>
+                  <a href="#demo" class="btn btn-primary" data-toggle="collapse">See Recipe</a>
+                  <div id="demo" class="collapse">
+                      recipe goes here
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<br>
+<br>
+<br>
+
+  </body>
+
+  <div class="card fixed-bottom font-small bg-secondary">
+  
+	  <div class="card-body text-light">
+	    <a class="card-body text-info" href="mailto:MoHeJaNi@gmail.com">| Contact Us</a>
+	    <a class="card-body text-center text-info" href="about.html">| About Us</a>
+	  </div>  
+
+  </div>
+  
+</html>
